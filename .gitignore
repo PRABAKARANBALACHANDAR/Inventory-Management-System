@@ -1,2 +1,3 @@
 *.env
 ims_venv/
+*__pycache__/

@@ -1,10 +1,10 @@
-from sqlalchemy.orm import declarative_base,sessionmaker
-from sqlalchemy import create_engine
-from dotenv import load_dotenv
 import os
 from urllib.parse import quote_plus
+from dotenv import load_dotenv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import declarative_base,sessionmaker
 
-env_path=os.path.join(os.path.dirname(__file__),"..",".env")
+env_path=os.path.join(os.path.dirname(__file__),"..","..",".env")
 load_dotenv(env_path)
 
 USER=os.getenv("USER")
